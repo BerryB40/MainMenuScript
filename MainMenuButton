@@ -1,0 +1,32 @@
+using UnityEngine;
+using System.Collections;
+
+public class MainMenuScript : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+
+	public void OnClick_Play() //This function lets you play the game.
+	{
+		Application.LoadLevel ("Your Game"); //Add the name of the scene of the game in here.
+	}
+
+	public void OnClick_Instructions() //This function lets you go through the how to play section.
+	{
+		Application.LoadLevel ("HowToPlay"); //Add the name of the how to play section in the game right here.
+	}
+
+	public void OnClick_Quit() //This function lets you quit the game.
+	{
+		Application.Quit(); //Quits the game.
+		Debug.Log ("Quit");
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}
